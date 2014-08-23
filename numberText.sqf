@@ -11,8 +11,8 @@ _mod = [_this,1,3,[0]] call bis_fnc_param;
 if (typeName _number == "STRING") then {
 	_number = parseNumber _number;
 	_decimals = _number % 1;
-    _decimals = _decimals * 1000000;
-    _number = floor _number;
+    	_decimals = _decimals * 1000000;
+    	_number = floor _number;
 };
 	
 _digits = _number call BIS_fnc_numberDigits;
